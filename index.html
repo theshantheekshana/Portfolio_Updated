@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theshan Theekshana — Computer Engineering Student & Systems Architect</title>
+  <meta name="description"
+    content="Portfolio of Theshan Theekshana. Computer Engineering Student specializing in Embedded Systems, IoT, High-Performance Computing, and Full-Stack Engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Light Blobs (Mesh Glow) -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+  <div class="ambient-glow glow-4" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Glow -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Fixed Top Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar glass-pill">
+      <!-- Brand Logo / Monogram -->
+      <a href="#home" class="nav-brand" aria-label="Theshan Theekshana Home">
+        <div class="brand-avatar">TT</div>
+        <div class="brand-text">
+          <span class="brand-name">Theshan Theekshana</span>
+          <span class="brand-title">Computer Engineering Student</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links (Centered Pills) -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#technologies" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Navbar Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark / Light) -->
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle theme (Dark / Light)"
+          aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+            </path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Primary CTA Button -->
+        <a href="#contact" class="btn btn-nav-cta">
+          <span>Let's Talk</span>
+          <svg class="icon-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+            stroke-width="2.2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="page-container">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <!-- Left Hero Content -->
+        <div class="hero-content reveal-on-scroll" data-delay="0">
+          <div class="badge-pill hero-badge">
+            <span class="pulsing-dot"></span>
+            <span>HELLO, I'M</span>
+          </div>
+
+          <h1 class="hero-title">Theshan Theekshana</h1>
+          <h2 class="hero-subtitle gradient-text">Computer Engineering Student</h2>
+
+          <p class="hero-description">
+            I craft meaningful digital experiences and robust systems at the intersection of embedded hardware,
+            distributed software, and high-performance engineering.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2.2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+              </svg>
+            </a>
+            <button id="hero-download-cv" class="btn btn-outline">
+              <span>Download CV</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Trusted By & Engineering Ecosystem Badges -->
+          <div class="hero-trusted">
+            <span class="trusted-label">Core Ecosystem & Tech</span>
+            <div class="trusted-logos">
+              <span class="tech-chip"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg> GitHub</span>
+              <span class="tech-chip"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path
+                    d="M12.016 0C5.39 0 .016 5.373.016 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-11.984-12z" />
+                </svg> Linux</span>
+              <span class="tech-chip">Intel</span>
+              <span class="tech-chip">NVIDIA</span>
+              <span class="tech-chip">Arduino</span>
+              <span class="tech-chip">Docker</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual with Interactive Glass Card Frame -->
+        <div class="hero-visual-wrapper reveal-on-scroll" data-delay="150">
+          <div class="hero-image-card" id="hero-card-tilt">
+            <!-- Ambient Glow behind portrait -->
+            <div class="portrait-ambient-glow" aria-hidden="true"></div>
+
+            <!-- User Portrait with Futuristic Glass Frame -->
+            <div class="portrait-frame">
+              <img src="./assets/theshan-portrait.png" alt="Theshan Theekshana - Computer Engineering Student"
+                class="portrait-img" loading="eager" fetchpriority="high">
+            </div>
+
+            <!-- Floating Glass Card 1 (Top-Right): Experience Counter -->
+            <div class="floating-badge badge-top-right glass-card-micro floating-element" data-speed="1.2">
+              <div class="stat-number-box">
+                <span class="badge-num" data-target="3">3</span><span class="plus">+</span>
+              </div>
+              <span class="badge-text">Years of<br>Engineering</span>
+            </div>
+
+            <!-- Floating Glass Card 2 (Bottom-Right): Performance Impact Wave -->
+            <div class="floating-badge badge-bottom-right glass-card-micro floating-element" data-speed="0.8">
+              <div class="badge-impact-header">
+                <span class="impact-label">System Impact</span>
+                <span class="impact-val">+140%</span>
+              </div>
+              <div class="sparkline-container" aria-label="Performance trend">
+                <svg class="sparkline-svg" viewBox="0 0 100 28" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="sparkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#8b5cf6" />
+                      <stop offset="50%" stop-color="#6366f1" />
+                      <stop offset="100%" stop-color="#06b6d4" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M 0,22 Q 15,24 25,18 T 50,14 T 75,6 T 100,2" fill="none" stroke="url(#sparkGradient)"
+                    stroke-width="2.5" stroke-linecap="round"></path>
+                  <circle cx="100" cy="2" r="3.5" fill="#06b6d4" class="spark-pulse"></circle>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Floating Sparkle Element (Bottom-Left) matching reference portrait -->
+            <div class="floating-orb floating-element" data-speed="1.5" aria-hidden="true">
+              <div class="iridescent-sphere">
+                <span class="sparkle-star">✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section id="about" class="section-container about-section">
+      <div class="section-card glass-panel reveal-on-scroll">
+        <div class="about-grid">
+          <!-- Left Column: Title & Stats -->
+          <div class="about-left">
+            <div class="badge-pill section-badge">
+              <span>ABOUT ME</span>
+            </div>
+            <h2 class="section-title">Designing with Empathy<br>Building with Purpose</h2>
+
+            <!-- Quick Stats in Glass Pills -->
+            <div class="stats-pills-row">
+              <div class="stat-pill glass-card-inner">
+                <div class="stat-icon-wrapper">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div class="stat-meta">
+                  <span class="stat-digit" data-target="3">3</span><span class="stat-plus">+</span>
+                  <span class="stat-name">Years Experience</span>
+                </div>
+              </div>
+
+              <div class="stat-pill glass-card-inner">
+                <div class="stat-icon-wrapper">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    <polygon points="12 11 12 17 17 14"></polygon>
+                  </svg>
+                </div>
+                <div class="stat-meta">
+                  <span class="stat-digit" data-target="30">30</span><span class="stat-plus">+</span>
+                  <span class="stat-name">Projects Completed</span>
+                </div>
+              </div>
+
+              <div class="stat-pill glass-card-inner">
+                <div class="stat-icon-wrapper">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="stat-meta">
+                  <span class="stat-digit" data-target="15">15</span><span class="stat-plus">+</span>
+                  <span class="stat-name">Hardware & Tech Stacks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Description & Modal Trigger -->
+          <div class="about-right">
+            <p class="about-text">
+              I'm a computer engineering undergraduate with hands-on experience turning complex technical problems into
+              elegant, intuitive, and high-performance solutions.
+            </p>
+            <p class="about-text secondary-text">
+              I believe in human-centered systems design, clean architectural abstractions, and thoughtful low-level
+              execution—from bare-metal embedded microcontrollers to scalable cloud applications.
+            </p>
+
+            <div class="about-highlights">
+              <span class="highlight-chip">⚡ Real-time Operating Systems</span>
+              <span class="highlight-chip">🛠 Microcontroller Firmware</span>
+              <span class="highlight-chip">🌐 Reactive Modern Web</span>
+              <span class="highlight-chip">🧠 Edge Machine Intelligence</span>
+            </div>
+
+            <button id="open-about-modal" class="btn btn-pill-outline">
+              <span>More About Me</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2.2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="section-container">
+      <div class="section-header reveal-on-scroll">
+        <div class="badge-pill section-badge">
+          <span>WHAT I DO</span>
+        </div>
+        <h2 class="section-title">Services I Offer</h2>
+        <p class="section-subtitle">Bridging low-level hardware computing and high-level digital user experiences.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card glass-panel card-hover-3d reveal-on-scroll" data-delay="0">
+          <div class="service-icon-box icon-purple">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+          <h3 class="service-name">Embedded Systems & IoT</h3>
+          <p class="service-desc">
+            Developing robust firmware, sensor acquisition pipelines, RTOS integrations, and connected IoT telemetry
+            using ESP32, STM32, and ARM architectures.
+          </p>
+          <div class="service-footer">
+            <span class="service-tech-tags">C/C++ • FreeRTOS • MQTT</span>
+            <span class="card-arrow-circle" aria-label="Explore service">↗</span>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card glass-panel card-hover-3d reveal-on-scroll" data-delay="100">
+          <div class="service-icon-box icon-indigo">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-name">Full-Stack Web Architecture</h3>
+          <p class="service-desc">
+            Crafting seamless, reactive web interfaces backed by resilient REST/GraphQL APIs, distributed data
+            pipelines, and responsive microservices.
+          </p>
+          <div class="service-footer">
+            <span class="service-tech-tags">React • Node.js • TypeScript</span>
+            <span class="card-arrow-circle" aria-label="Explore service">↗</span>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card glass-panel card-hover-3d reveal-on-scroll" data-delay="200">
+          <div class="service-icon-box icon-cyan">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+          </div>
+          <h3 class="service-name">High-Performance Computing</h3>
+          <p class="service-desc">
+            Building scalable algorithms, memory-optimized routines, low-latency network protocols, and multi-threaded
+            systems in modern C++ and Rust.
+          </p>
+          <div class="service-footer">
+            <span class="service-tech-tags">C++20 • Linux • Multithreading</span>
+            <span class="card-arrow-circle" aria-label="Explore service">↗</span>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card glass-panel card-hover-3d reveal-on-scroll" data-delay="300">
+          <div class="service-icon-box icon-emerald">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3 class="service-name">Edge AI & Computer Vision</h3>
+          <p class="service-desc">
+            Implementing machine vision models, real-time object tracking, spatial depth inference, and
+            hardware-accelerated pipelines for robotics.
+          </p>
+          <div class="service-footer">
+            <span class="service-tech-tags">OpenCV • Python • TensorRT</span>
+            <span class="card-arrow-circle" aria-label="Explore service">↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNOLOGIES / SKILLS SECTION ==================== -->
+    <section id="technologies" class="section-container">
+      <div class="section-header reveal-on-scroll">
+        <div class="badge-pill section-badge">
+          <span>TOOLS & SKILLS</span>
+        </div>
+        <h2 class="section-title">Technologies I Use</h2>
+        <p class="section-subtitle">Proficient in low-level systems programming, modern web frameworks, and devops
+          tooling.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="skills-filter-bar reveal-on-scroll">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="languages">Languages</button>
+        <button class="filter-pill" data-filter="embedded">Embedded & Hardware</button>
+        <button class="filter-pill" data-filter="web">Web & Cloud</button>
+        <button class="filter-pill" data-filter="tools">Tools & DevOps</button>
+      </div>
+
+      <!-- Skills Grid matching the reference icon pills -->
+      <div class="skills-grid reveal-on-scroll" id="skills-grid">
+        <!-- C/C++ -->
+        <div class="skill-card glass-panel" data-category="languages embedded">
+          <div class="skill-icon-wrap">
+            <span class="tech-icon-code">C++</span>
+          </div>
+          <span class="skill-name">C / C++</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card glass-panel" data-category="languages tools">
+          <div class="skill-icon-wrap icon-python">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path
+                d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.006 2.75h5.81v.825H3.92S0 5.787 0 11.918c0 6.13 3.42 5.92 3.42 5.92h2.04v-2.868s-.11-3.42 3.364-3.42h5.783v-.855H8.818v-2.45h8.922s3.238.36 3.238-5.328C20.978-.15 17.52 0 11.914 0zm-3.08 1.637c.602 0 1.092.489 1.092 1.091 0 .603-.49 1.092-1.092 1.092a1.092 1.092 0 1 1 0-2.183zM12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.006-2.75h-5.81v-.825h8.096s3.92.444 3.92-5.687c0-6.13-3.42-5.92-3.42-5.92h-2.04v2.868s.11 3.42-3.364 3.42H9.393v.855h5.789v2.45H6.26s-3.238-.36-3.238 5.328C3.022 24.15 6.48 24 12.086 24zm3.08-1.637c-.602 0-1.092-.489-1.092-1.091 0-.603.49-1.092 1.092-1.092a1.092 1.092 0 1 1 0 2.183z" />
+            </svg>
+          </div>
+          <span class="skill-name">Python</span>
+          <span class="skill-level">Proficient</span>
+        </div>
+
+        <!-- JavaScript / TypeScript -->
+        <div class="skill-card glass-panel" data-category="languages web">
+          <div class="skill-icon-wrap icon-js">
+            <span class="tech-icon-code">TS</span>
+          </div>
+          <span class="skill-name">TypeScript</span>
+          <span class="skill-level">Proficient</span>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card glass-panel" data-category="web">
+          <div class="skill-icon-wrap icon-react">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(30 12 12)"></ellipse>
+              <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(90 12 12)"></ellipse>
+              <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(150 12 12)"></ellipse>
+              <circle cx="12" cy="12" r="1.8" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <span class="skill-name">React</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <!-- FreeRTOS / ESP32 -->
+        <div class="skill-card glass-panel" data-category="embedded">
+          <div class="skill-icon-wrap icon-mcu">
+            <span class="tech-icon-code">RTOS</span>
+          </div>
+          <span class="skill-name">FreeRTOS</span>
+          <span class="skill-level">Experienced</span>
+        </div>
+
+        <!-- Linux & Shell -->
+        <div class="skill-card glass-panel" data-category="tools embedded">
+          <div class="skill-icon-wrap icon-linux">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path
+                d="M12.016 0C5.39 0 .016 5.373.016 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-11.984-12z" />
+            </svg>
+          </div>
+          <span class="skill-name">Linux / POSIX</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <!-- Docker -->
+        <div class="skill-card glass-panel" data-category="tools web">
+          <div class="skill-icon-wrap icon-docker">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path
+                d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .103.082.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .103.083.186.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .103.084.186.186.186m5.893 2.715h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.186.186 0 00-.186.185v1.888c0 .102.083.185.186.185m-2.929 0h2.118a.185.185 0 00.185-.185V9.006a.185.185 0 00-.185-.186H8.1a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.186.186 0 00.185-.185V9.006a.185.185 0 00-.185-.186H5.136a.186.186 0 00-.186.185v1.888c0 .102.084.185.186.185m-2.928 0h2.118a.185.185 0 00.186-.185V9.006a.186.186 0 00-.186-.186H2.208a.186.186 0 00-.186.185v1.888c0 .102.083.185.186.185" />
+            </svg>
+          </div>
+          <span class="skill-name">Docker</span>
+          <span class="skill-level">Proficient</span>
+        </div>
+
+        <!-- Node.js -->
+        <div class="skill-card glass-panel" data-category="web">
+          <div class="skill-icon-wrap icon-node">
+            <span class="tech-icon-code">NODE</span>
+          </div>
+          <span class="skill-name">Node.js</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <!-- OpenCV / Vision -->
+        <div class="skill-card glass-panel" data-category="tools embedded">
+          <div class="skill-icon-wrap icon-cv">
+            <span class="tech-icon-code">CV</span>
+          </div>
+          <span class="skill-name">OpenCV</span>
+          <span class="skill-level">Experienced</span>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="skill-card glass-panel" data-category="web">
+          <div class="skill-icon-wrap icon-sql">
+            <span class="tech-icon-code">SQL</span>
+          </div>
+          <span class="skill-name">PostgreSQL</span>
+          <span class="skill-level">Proficient</span>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="skill-card glass-panel" data-category="tools">
+          <div class="skill-icon-wrap icon-git">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path
+                d="M23.546 10.93L13.067.452a1.5 1.5 0 00-2.124 0L8.831 2.564l3.3 3.3a1.782 1.782 0 012.247 2.263l3.182 3.182a1.783 1.783 0 011.983 2.961l-2.02-2.02a1.782 1.782 0 01-2.96-1.982l-3.182-3.182a1.78 1.78 0 01-2.155-.386l-3.3 3.3a1.5 1.5 0 000 2.124l10.477 10.478a1.5 1.5 0 002.124 0l8.98-8.98a1.5 1.5 0 000-2.124z" />
+            </svg>
+          </div>
+          <span class="skill-name">Git & CI/CD</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <!-- ARM Cortex & STM32 -->
+        <div class="skill-card glass-panel" data-category="embedded">
+          <div class="skill-icon-wrap icon-arm">
+            <span class="tech-icon-code">ARM</span>
+          </div>
+          <span class="skill-name">ARM Cortex</span>
+          <span class="skill-level">Experienced</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED WORK / FEATURED PROJECTS ==================== -->
+    <section id="projects" class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div>
+          <div class="badge-pill section-badge">
+            <span>FEATURED PROJECTS</span>
+          </div>
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+        <a href="#contact" class="btn btn-pill-outline">
+          <span>Request Custom Build</span>
+          <span class="arrow-up-right">↗</span>
+        </a>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Finova Finance Edge App -->
+        <article class="project-card glass-panel card-hover-3d reveal-on-scroll" data-delay="0"
+          data-project-id="finova">
+          <div class="project-preview-frame">
+            <!-- Sleek Glassmorphic App Mockup -->
+            <div class="mockup-window mockup-finova">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-title-bar">finova-stream.edge.local</div>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-chart-widget">
+                  <div class="mockup-chart-top">
+                    <span class="m-stat-tag">Throughput: 14.8k req/s</span>
+                    <span class="m-stat-pill">Sub-10ms Latency</span>
+                  </div>
+                  <div class="mockup-bars">
+                    <div class="m-bar" style="height: 40%"></div>
+                    <div class="m-bar" style="height: 65%"></div>
+                    <div class="m-bar" style="height: 50%"></div>
+                    <div class="m-bar" style="height: 85%"></div>
+                    <div class="m-bar active" style="height: 98%"></div>
+                    <div class="m-bar" style="height: 72%"></div>
+                    <div class="m-bar" style="height: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h3 class="project-title">Finova — Real-Time Financial Telemetry</h3>
+              <p class="project-category">High-Speed Financial Streaming & Visualization Engine</p>
+            </div>
+            <button class="project-expand-btn" aria-label="Open project details">
+              <span class="card-arrow-circle">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2: Neuromorphic Vision Core -->
+        <article class="project-card glass-panel card-hover-3d reveal-on-scroll" data-delay="150"
+          data-project-id="neuromorphic">
+          <div class="project-preview-frame">
+            <!-- Sleek Vision Dashboard Mockup -->
+            <div class="mockup-window mockup-vision">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-title-bar">neural-cam://stream-01</div>
+              </div>
+              <div class="mockup-content">
+                <div class="vision-grid-box">
+                  <div class="bounding-box box-1">
+                    <span class="box-tag">Obstacle: 99.4%</span>
+                  </div>
+                  <div class="bounding-box box-2">
+                    <span class="box-tag">Target Nav [3.2m]</span>
+                  </div>
+                  <div class="vision-radar">
+                    <div class="radar-sweep"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h3 class="project-title">Neuromorphic Vision Core</h3>
+              <p class="project-category">Autonomous Spatial Edge AI & Sensor Fusion Pipeline</p>
+            </div>
+            <button class="project-expand-btn" aria-label="Open project details">
+              <span class="card-arrow-circle">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3: AeroPulse Drone Fleet Platform -->
+        <article class="project-card glass-panel card-hover-3d reveal-on-scroll" data-delay="300"
+          data-project-id="aeropulse">
+          <div class="project-preview-frame">
+            <!-- Sleek Drone Telemetry Mockup -->
+            <div class="mockup-window mockup-drone">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-title-bar">aeropulse.telemetry/uav-mesh</div>
+              </div>
+              <div class="mockup-content">
+                <div class="telemetry-gauges">
+                  <div class="gauge-card">
+                    <span class="g-num">420m</span>
+                    <span class="g-sub">Altitude</span>
+                  </div>
+                  <div class="gauge-card highlight">
+                    <span class="g-num">98.2%</span>
+                    <span class="g-sub">Link Signal</span>
+                  </div>
+                  <div class="gauge-card">
+                    <span class="g-num">24.6V</span>
+                    <span class="g-sub">LiPo Cell</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h3 class="project-title">AeroPulse Cloud Platform</h3>
+              <p class="project-category">Embedded UAV Mesh Telemetry & Ground Station</p>
+            </div>
+            <button class="project-expand-btn" aria-label="Open project details">
+              <span class="card-arrow-circle">↗</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== ENGINEERING PROCESS SECTION ==================== -->
+    <section id="process" class="section-container">
+      <div class="section-header reveal-on-scroll">
+        <div class="badge-pill section-badge">
+          <span>MY PROCESS</span>
+        </div>
+        <h2 class="section-title">Design & Engineering Process I Follow</h2>
+        <p class="section-subtitle">A disciplined methodology delivering reliable hardware, clean code, and delightful
+          interfaces.</p>
+      </div>
+
+      <!-- 5-Step Process Flow matching reference image -->
+      <div class="process-flow-wrapper reveal-on-scroll">
+        <div class="process-step-card glass-panel">
+          <div class="step-num-pill">
+            <span class="step-icon">⚡</span>
+            <span class="step-num">01</span>
+          </div>
+          <h3 class="step-title">Discover</h3>
+          <p class="step-desc">Analyze hardware constraints, user requirements, and system latency targets.</p>
+        </div>
+
+        <div class="process-step-card glass-panel">
+          <div class="step-num-pill">
+            <span class="step-icon">📐</span>
+            <span class="step-num">02</span>
+          </div>
+          <h3 class="step-title">Define & Plan</h3>
+          <p class="step-desc">Architect modular schemas, schematic pinouts, protocols, and data contracts.</p>
+        </div>
+
+        <div class="process-step-card glass-panel">
+          <div class="step-num-pill">
+            <span class="step-icon">💡</span>
+            <span class="step-num">03</span>
+          </div>
+          <h3 class="step-title">Prototype</h3>
+          <p class="step-desc">Rapid breadboarding, iterative firmware programming, and UI proofs-of-concept.</p>
+        </div>
+
+        <div class="process-step-card glass-panel">
+          <div class="step-num-pill">
+            <span class="step-icon">🔬</span>
+            <span class="step-num">04</span>
+          </div>
+          <h3 class="step-title">Rigorous Testing</h3>
+          <p class="step-desc">Benchmarking signal noise, memory leaks, concurrency races, and UX flows.</p>
+        </div>
+
+        <div class="process-step-card glass-panel">
+          <div class="step-num-pill">
+            <span class="step-icon">🚀</span>
+            <span class="step-num">05</span>
+          </div>
+          <h3 class="step-title">Deploy & Iterate</h3>
+          <p class="step-desc">Flashing firmware, production deployment, telemetry observation, and continuous
+            refinement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== 
+    <section id="testimonials" class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div>
+          <div class="badge-pill section-badge">
+            <span>TESTIMONIALS</span>
+          </div>
+          <h2 class="section-title">What Mentors & Peers Say</h2>
+        </div>
+        <div class="carousel-nav-arrows">
+          <button id="testimonial-prev" class="carousel-arrow" aria-label="Previous Testimonial">‹</button>
+          <button id="testimonial-next" class="carousel-arrow" aria-label="Next Testimonial">›</button>
+        </div>
+      </div>
+
+      <div class="testimonials-slider reveal-on-scroll" id="testimonials-slider">
+         Testimonial 1 
+        <div class="testimonial-card glass-panel active">
+          <div class="quote-symbol">“</div>
+          <p class="testimonial-quote">
+            "Theshan has a rare balance of deep systems programming acumen and an instinct for sleek, modern software
+            design. His work on our real-time telemetry pipeline cut latency by 60%."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-1">RS</div>
+            <div class="author-info">
+              <span class="author-name">Rohit Sharma</span>
+              <span class="author-role">Hardware Lead & Systems Mentor</span>
+            </div>
+          </div>
+        </div>
+
+        Testimonial 2 
+        <div class="testimonial-card glass-panel">
+          <div class="quote-symbol">“</div>
+          <p class="testimonial-quote">
+            "Working with Theshan on the distributed IoT architecture was effortless. His code is modular, robustly
+            typed, and thoroughly tested. He consistently exceeds expectations."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-2">NV</div>
+            <div class="author-info">
+              <span class="author-name">Neha Verma</span>
+              <span class="author-role">Staff Software Engineer & Cloud Architect</span>
+            </div>
+          </div>
+        </div>
+
+         Testimonial 3
+        <div class="testimonial-card glass-panel">
+          <div class="quote-symbol">“</div>
+          <p class="testimonial-quote">
+            "Theshan's embedded computer vision pipeline transformed our autonomous vehicle prototype. Highly
+            disciplined, analytical, and always eager to push boundaries."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar avatar-3">KM</div>
+            <div class="author-info">
+              <span class="author-name">Karan Malhotra</span>
+              <span class="author-role">Robotics Project Lead & Researcher</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- ==================== CONTACT / LET'S CONNECT SECTION ==================== -->
+
+    <section id="contact" class="section-container contact-section">
+      <div class="section-card glass-panel reveal-on-scroll">
+        <div class="contact-grid">
+
+          <div class="contact-info-col">
+            <div class="badge-pill section-badge">
+              <span>LET'S CONNECT</span>
+            </div>
+            <h2 class="section-title">Have a project in mind?<br><span class="gradient-text">Let's build something
+                extraordinary.</span></h2>
+            <p class="contact-subtext">
+              Whether you need embedded firmware, high-performance C++ software, or an elegant web platform, I'd love to
+              collaborate.
+            </p>
+
+            <div class="contact-methods">
+              <a href="mailto:theshan.theekshana@eng.portfolio.com" class="contact-item-pill glass-card-inner">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">Email</span>
+                  <span class="c-val">theshan.theekshana@eng.portfolio.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+94771234567" class="contact-item-pill glass-card-inner">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">Phone & WhatsApp</span>
+                  <span class="c-val">+94 77 123 4567</span>
+                </div>
+              </a>
+
+              <div class="contact-item-pill glass-card-inner">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">Location</span>
+                  <span class="c-val">Colombo, Sri Lanka (Available Globally)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Availability status pill -->
+            <div class="availability-badge">
+              <span class="pulse-indicator"></span>
+              <span>Available for engineering internships & freelance collaborations</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Glass Form & 3D Orb -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="glass-form" novalidate>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                  <span class="error-msg">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Email</label>
+                  <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                  <span class="error-msg">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-service">Project Domain</label>
+                <div class="select-wrapper">
+                  <select id="contact-service" name="service" required>
+                    <option value="" disabled selected>Select project focus...</option>
+                    <option value="embedded">Embedded Systems / IoT Prototyping</option>
+                    <option value="web">Full-Stack Web Application</option>
+                    <option value="cpp">High-Performance C++ Architecture</option>
+                    <option value="vision">Computer Vision & Edge AI</option>
+                    <option value="other">Other Collaboration / Inquiries</option>
+                  </select>
+                  <svg class="select-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message" rows="4"
+                  placeholder="Tell me about your goals, timeline, or engineering specs..." required></textarea>
+                <span class="error-msg">Please enter your message</span>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-block">
+                <span class="btn-text">Send Message</span>
+                <svg class="icon-send" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-wrapper">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="brand-avatar">TT</div>
+        <div>
+          <span class="footer-name">Theshan Theekshana</span>
+          <p class="footer-tagline">Computer Engineering Student • System Architect</p>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 Theshan Theekshana. Crafted with modern glassmorphism & precision engineering.
+        </p>
+        <button id="back-to-top" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+          <span>Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE MODALS ==================== -->
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+      <button id="close-project-modal" class="modal-close-btn" aria-label="Close project modal">✕</button>
+      <div id="modal-project-content" class="modal-body">
+        <!-- Injected dynamically by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me Deep-Dive Modal -->
+  <div id="about-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <button id="close-about-modal" class="modal-close-btn" aria-label="Close about modal">✕</button>
+      <div class="modal-body">
+        <div class="badge-pill section-badge">
+          <span>ACADEMIC & TECHNICAL BACKGROUND</span>
+        </div>
+        <h3 id="about-modal-title" class="modal-heading">Theshan Theekshana — Computer Engineering</h3>
+        <p class="modal-lead">Undergraduate student specialized in Computer Engineering with passion for low-level
+          systems, hardware-software co-design, and modern scalable architectures.</p>
+
+        <div class="modal-spec-grid">
+          <div class="spec-block glass-card-inner">
+            <h4 class="spec-title">🎓 Academic Focus</h4>
+            <ul class="spec-list">
+              <li>Computer Architecture & Microprocessors</li>
+              <li>Operating Systems & Distributed Networks</li>
+              <li>Data Structures & Algorithmic Optimization</li>
+              <li>Digital Signal Processing & Sensor Telemetry</li>
+            </ul>
+          </div>
+          <div class="spec-block glass-card-inner">
+            <h4 class="spec-title">⚙️ Engineering Honors</h4>
+            <ul class="spec-list">
+              <li>Dean's List Recognition for Academic Distinction</li>
+              <li>Robotics & Autonomous Vehicle Research Group Lead</li>
+              <li>1st Place in University Embedded Hackathon</li>
+              <li>Open-Source Contributor to FreeRTOS Ecosystem</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-actions-bar">
+          <a href="#contact" class="btn btn-primary"
+            onclick="document.getElementById('about-modal').classList.remove('open')">
+            <span>Collaborate With Me</span>
+            <span class="arrow-up-right">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Component -->
+  <div id="toast" class="toast-container" role="status" aria-live="polite">
+    <div class="toast-card glass-pill">
+      <span class="toast-icon">✓</span>
+      <span id="toast-message" class="toast-text">Action completed successfully!</span>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
