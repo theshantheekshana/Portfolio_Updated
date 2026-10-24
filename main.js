@@ -141,6 +141,8 @@ function initScrollSpy() {
 
 /* ==================== 6. 3D CARD TILT ON MOUSE MOVE ==================== */
 function initCard3DTilt() {
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+
   const tiltCards = document.querySelectorAll('.card-hover-3d, #hero-card-tilt');
 
   tiltCards.forEach(card => {
@@ -377,6 +379,9 @@ function initTestimonialsSlider() {
   window.addEventListener('resize', () => {
     showTestimonial(currentIndex);
   });
+
+  // Initialize immediately for mobile viewport
+  showTestimonial(currentIndex);
 }
 
 /* ==================== 11. CONTACT FORM VALIDATION & SUBMISSION ==================== */
@@ -506,14 +511,36 @@ function initMobileMenu() {
 
   if (!mobileToggle || !navLinks) return;
 
-  mobileToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('mobile-open');
+  const closeMenu = () => {
+    navLinks.classList.remove('mobile-open');
+    mobileToggle.classList.remove('active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  mobileToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = navLinks.classList.toggle('mobile-open');
+    mobileToggle.classList.toggle('active', isOpen);
+    mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
-  navLinks.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('mobile-open');
-    });
+  // Close when clicking any link inside the mobile drawer
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close when clicking anywhere outside the navbar
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.navbar-wrapper')) {
+      closeMenu();
+    }
+  });
+
+  // Close on Escape key press
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('mobile-open')) {
+      closeMenu();
+    }
   });
 }
 
